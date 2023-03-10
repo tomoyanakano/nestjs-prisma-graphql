@@ -7,7 +7,7 @@ import { join } from 'path';
 import { PostModule } from './posts/post.module';
 import { ConfigModule } from '@nestjs/config';
 import { PrismaService } from './prisma/prisma.service';
-import { CommentModel } from './comments/comment.model';
+import { CommentModule } from './comments/comment.module';
 
 @Module({
   imports: [
@@ -20,7 +20,7 @@ import { CommentModel } from './comments/comment.model';
       isGlobal: true,
     }),
     PostModule,
-    CommentModel,
+    CommentModule,
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService],

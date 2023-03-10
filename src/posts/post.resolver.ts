@@ -10,7 +10,7 @@ import { PostConnection, PostModel } from './post.model';
 import { PostService } from './post.service';
 import { PostCreateInput } from './post.input';
 import { CommentService } from 'src/comments/comment.service';
-import { CommentConnection, CommentModel } from 'src/comments/comment.model';
+import { CommentConnection } from 'src/comments/comment.model';
 import { ConnectionArguments } from 'src/pagination/pagination.args';
 
 @Resolver((of) => PostModel)
